@@ -51,7 +51,53 @@
     <!--Main Section-->
     <main class="flex-shrink-0">
        <div class="container">
-           
+            <div class="row">
+                <div class="col">
+                    <div>
+                        Title of the project, with a small description
+                    </div>
+                    <div>
+                        Instructions of the project bla bla bla bla
+                    </div>
+                </div>
+                <div class="col">
+                    <form class="row">
+                        <div class="col">
+                            <div>
+                                <label for="startValue">Starting Value</label>
+                                <input type="number" placeholder="Start Value" id="startValue" aria-label="Start Value" value="0">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <label for="endValue">Ending Value</label>
+                                <input type="text" placeholder="End Value" id="endValue" aria-label="End Value" value="100">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div>
+                                <button type="button" class="btn btn-secondary" onclick="getValues()" id="submitButton">Start sequence</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <div>
+                        Results
+                        <div class="table-responsive">
+                            <table class="table table-striped table-sm">
+                                <thead>
+
+                                </thead>
+                                <tbody id="results">
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div?>
+                </div>
+
+            </div>
          </div>
     </main>
     <!--Footer Section-->
@@ -104,6 +150,9 @@
     </script>
     <script src="/js/Site.js">
     </script>
+   <!-- <script>
+        document.getElementById("submitButton").addEventListener("click", getValues);
+    </script>-->
 </body>
 
 </html>
